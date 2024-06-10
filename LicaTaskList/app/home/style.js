@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         padding: 25,
         flexDirection: 'row', 
         justifyContent: 'space-between',
-        backgroundColor: '#000000c0',
+        backgroundColor: '#0000005a',
         borderBottomLeftRadius: 10,
         borderBottomRightRadius: 10,
     },
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
         borderTopRightRadius: 10,
     },
     inputContainer: {
-        backgroundColor: '#000',
+        backgroundColor: '#2e2e2e',
         elevation: 40,
         flex: 1,
         height: 50,

@@ -3,23 +3,22 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     itemList: {
         padding: 15,
-        elevation: 12,
         borderRadius: 7,
-        borderWidth: 2,
-        borderColor: 'white',
+        borderWidth: 1,
+        borderColor: 'black',
         marginVertical: 5,
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#000000c0',
+        backgroundColor: '#0000009a',
     },
     itemToBuy: {
-        color: '#fff',
+        color: '#b5b5b5',
         fontSize: 24, 
         textDecorationLine: 'none',
     },
     itemBought: {
-        color: '#fff',
+        color: '#616161',
         fontSize: 24, 
         textDecorationLine: 'line-through',
     },

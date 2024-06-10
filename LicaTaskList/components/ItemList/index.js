@@ -1,3 +1,4 @@
+import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 import { styles } from './style'
 import { Ionicons } from '@expo/vector-icons'
@@ -17,14 +18,14 @@ export default function ItemList({ item, markItem, unmarkItem, removeItem }) {
         style={styles.actionIcon}
         onPress={() => markItem(item.id)}
       >
-        <Ionicons name='bag-check-outline' size={24} color="#fff" />
+        <AntDesign name="check" size={24} color="whitesmoke" />
       </TouchableOpacity>
       ) : (
         <TouchableOpacity 
         style={styles.actionIcon}
         onPress={() => unmarkItem(item.id)}
       >
-        <Ionicons name='bag-remove-outline' size={24} color="#fff" />
+        <AntDesign name="check" size={24} color="whitesmoke" />
       </TouchableOpacity>
       )}
       
@@ -32,7 +33,7 @@ export default function ItemList({ item, markItem, unmarkItem, removeItem }) {
         style={[styles.actionIcon, {backgroundColor: 'darkred'}]}
         onPress={() => removeItem(item.id)}
       >
-        <Ionicons name='trash-bin-outline' size={24} color="#fff" />
+        <AntDesign name="close" size={24} color="whitesmoke" />
       </TouchableOpacity>
     </View>
   )

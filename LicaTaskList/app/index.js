@@ -7,7 +7,7 @@ export default function Welcome() {
     <View style={styles.container}>
       <View style={styles.imageContainer}>
         <Image
-          source={require("../assets/avatar.png")}
+          source={require("../src/assets/avatar.png")}
           style={styles.image} 
         />
       </View>
@@ -28,7 +28,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#999999',
   },
   imageContainer: {
     flex: 2,
@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    backgroundColor: "#dadada",
-    borderTopLeftRadius: 25,
-    borderTopRightRadius: 25,
+    backgroundColor: "#dadada2a",
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
     paddingHorizontal: '5%',
   },
   title: {
@@ -56,8 +56,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   text: {
-    color: 'gray',
+    color: 'black',
     fontSize: 16,
+    textAlign: 'center'
   },
   button: {
     position: 'absolute',

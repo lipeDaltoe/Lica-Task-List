@@ -24,7 +24,7 @@ Adicionar uma pasta src
 Adicionar na pasta src a pasta assets e copiar as imagens necessárias
 
 
-Adicionar uma pasta componentes\ItemList e criar os arquivos index e style
+Adicionar uma pasta components\ItemList e criar os arquivos index e style
 
 
 Adicionar uma pasta app
@@ -36,6 +36,7 @@ Adicionar uma pasta home na pasta app
     Criar o arquivo index.js
     
 
+npm i
 npx expo start --localhost --android
 ou
 npm run android

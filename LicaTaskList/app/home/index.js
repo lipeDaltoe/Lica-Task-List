@@ -12,7 +12,7 @@ import {
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons }  from '@expo/vector-icons';
 import { styles } from './style';
-import ItemList from '../../componentes/ItemList';
+import ItemList from '../../components/ItemList';
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
 export default function Home() {
@@ -110,13 +110,13 @@ export default function Home() {
   return (
     <SafeAreaView style={{ flex:1 }}>
       <ImageBackground
-        source={require('../../assets/background.jpg')}
-        resizeMode='repeat'
+        source={require('../../src/assets/background.png')}
+        // resizeMode='repeat'
         style={{flex: 1,justifyContent: 'flex-start'}}
       >
         <View style={styles.header}>
           <Text style={styles.title}>Lista de Tarefas</Text>
-          <Ionicons name="trash" size={32} color='#fff' onPress={removeAll}/>
+          <Ionicons name="trash" size={32} color='whitesmoke' onPress={removeAll}/>
         </View>
 
         {/* Lista de Produto */}
@@ -145,7 +145,7 @@ export default function Home() {
             />
           </View>
           <TouchableOpacity style={styles.iconContainer} onPress={addItem}>
-            <Ionicons name='add' size={36} color='#fff'/>
+            <Ionicons name='add' size={36} color='#32a852'/>
           </TouchableOpacity>
         </View>
 
